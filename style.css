@@ -95,8 +95,17 @@ nav a:hover{
 }
 
 footer{
+  background: #000000;
+  bottom: 0;
+  margin: auto;
+  position: relative;
+  padding: 40px 0;
+}
+
+.copyrights{
+  color: #FFFFFF;
   text-align: center;
-  color: #ffffff;
+  margin: 20px 0 0
   
 }
 
