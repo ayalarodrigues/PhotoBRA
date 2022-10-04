@@ -1,0 +1,68 @@
+header{
+    background: #000000;
+    padding: 20px 0;
+  }
+  
+  .box{
+    width: 940px; /*padrão da web */
+    position: relative;
+    margin: 0 auto; /* a margem externa pra cima e pra baixo é 0 e pra dir e na esq se calculam automaticamente */
+  }
+  
+  nav{
+    position: absolute; /*muda o ponto inicial em relação a algo*/
+      top: 90px;
+      right: 0;
+  } 
+  
+  nav li{
+     display: inline; /* links ficam lado a lado*/
+     margin: 0 0 0 15px; /*cria uma espaçamento entre os links*/ 
+  }
+  
+  nav a{
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 15px;
+    text-decoration: none;
+  }
+  
+  #logo{
+    width:220px;
+    height: 200px;
+  }
+  
+  main{
+    width: 940px;
+    margin: 0 auto;
+  }
+  form{
+    margin: 40px 0;
+  }
+  form label{
+    display: block; /* insere uma quebra nos campos, de forma que fiquem um abaixo do outro, não lado a lado */
+    font-size: 20px;
+    margin:  0 0 10px; /* insere um espaço entre a label e o input */
+  }
+  
+  form input{
+    display: block;
+    margin: 0 0 10px;
+    padding: 5px 25px;
+    width: 50%;
+  }
+  
+  footer{
+    background: #000000;
+    bottom: 0;
+    margin: auto;
+    position: relative;
+    padding: 40px 0;
+  }
+  
+  .copyrights{
+    color: #FFFFFF;
+    text-align: center;
+    margin: 20px 0 0
+    
+  }
