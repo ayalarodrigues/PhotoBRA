@@ -83,6 +83,7 @@ form label, form p, form legend {
 
 .submit:hover{
   background: #848004ec;
+  transform: scale(1.2); /*aumenta o botão quando o mouse passa por cima em 20%*/
 }
 footer{
   background: #000000;
