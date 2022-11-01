@@ -1,0 +1,116 @@
+body{
+  font-family: 'Lato', sans-serif;
+}
+
+header{
+  background: #000000;
+  padding: 20px 0;
+}
+
+nav{
+  position: absolute; /*muda o ponto inicial em relação a algo*/
+    top: 90px;
+    right: 0;
+} 
+
+nav li{
+   display: inline; /* links ficam lado a lado*/
+   margin: 0 0 0 15px; /*cria uma espaçamento entre os links*/ 
+}
+
+nav a{
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+nav a:hover{
+  color: #e7e240;
+  text-decoration: underline;
+}
+
+.box{
+  width: 940px; /*padrão da web */
+  position: relative;
+  margin: 0 auto; /* a margem externa pra cima e pra baixo é 0 e pra dir e esq se calculam automaticamente */
+}
+
+#logo{
+  width:220px;
+  height: 200px;
+}
+
+#pelourinho{
+  width:250px;
+  height: 250px;
+}
+#catedral{
+  width:250px;
+  height: 250px;
+}
+
+#museu{
+  width:250px;
+  height: 250px;
+}
+
+.photos{
+  width: 940px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.photos li{
+  display: inline-block; /*O tamanho pode ser ajustado, tanto na largura, quanto na altura*/
+  text-align: center;
+  width: 30%; /* os itens da lista se distribuem de melhor forma na página */
+  vertical-align: top;
+  margin: 0 1.5%; /* 1.5 + 1.5 = 3% de margem no total, com o 30% ocupados na largura, temos 99% do elemento principal ocupado */
+  padding: 30px 20px;
+  box-sizing: border-box; /* os 30% ficam fixos como inha largura e espaçamento do padding está dentro desses 30% */
+  border-width: 2px ; /*2 pixels de largura, entre o padding e a margin*/
+  border-style: solid;
+  border-color: #000000;
+}
+
+/* o hover é usado para realçar alguma característica quando o mouse do usuário estiver por cima do elemento*/
+
+.photos li:hover{
+  border-color: #e7e240;
+}
+
+.photos li:active{
+  border-color: #48a10c;
+}
+.photos li:hover p{
+  font-size: 20px;
+  transform: scale(1.13)
+}
+
+
+.photos h2{
+  font-size: 20px;
+}
+
+.photo-description{
+  text-align: center;
+  text-rendering: auto;
+}
+
+footer{
+  background: #000000;
+  bottom: 0;
+  margin: auto;
+  position: relative;
+  padding: 40px 0;
+}
+
+.copyrights{
+  color: #FFFFFF;
+  text-align: center;
+  margin: 20px 0 0
+  
+}
+
+

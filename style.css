@@ -1,6 +1,16 @@
+body{
+  font-family: 'Lato', sans-serif;
+}
+
 header{
   background: #000000;
   padding: 20px 0;
+}
+
+.box{
+  width: 940px; /*padrão da web */
+  position: relative;
+  margin: 0 auto; /* a margem externa pra cima e pra baixo é 0 e pra dir e na esq se calculam automaticamente */
 }
 
 nav{
@@ -20,16 +30,14 @@ nav a{
   font-size: 15px;
   text-decoration: none;
 }
-
 nav a:hover{
   color: #e7e240;
   text-decoration: underline;
 }
-
 .box{
   width: 940px; /*padrão da web */
   position: relative;
-  margin: 0 auto; /* a margem externa pra cima e pra baixo é 0 e pra dir e esq se calculam automaticamente */
+  margin: 0 auto; /* a margem externa pra cima e pra baixo é 0 e pra dir e na esq se calculam automaticamente */
 }
 
 #logo{
@@ -37,63 +45,50 @@ nav a:hover{
   height: 200px;
 }
 
-#pelourinho{
-  width:250px;
-  height: 250px;
-}
-#catedral{
-  width:250px;
-  height: 250px;
-}
-
-#museu{
-  width:250px;
-  height: 250px;
-}
-
-.photos{
+main{
   width: 940px;
   margin: 0 auto;
-  padding: 50px 0;
 }
-
-.photos li{
-  display: inline-block; /*O tamanho pode ser ajustado, tanto na largura, quanto na altura*/
-  text-align: center;
-  width: 30%; /* os itens da lista se distribuem de melhor forma na página */
-  vertical-align: top;
-  margin: 0 1.5%; /* 1.5 + 1.5 = 3% de margem no total, com o 30% ocupados na largura, temos 99% do elemento principal ocupado */
-  padding: 30px 20px;
-  box-sizing: border-box; /* os 30% ficam fixos como inha largura e espaçamento do padding está dentro desses 30% */
-  border-width: 2px ; /*2 pixels de largura, entre o padding e a margin*/
-  border-style: solid;
-  border-color: #000000;
+form{
+  margin: 40px 0;
 }
-
-/* o hover é usado para realçar alguma característica quando o mouse do usuário estiver por cima do elemento*/
-
-.photos li:hover{
-  border-color: #e7e240;
-}
-
-.photos li:active{
-  border-color: #48a10c;
-}
-.photos li:hover p{
+form label, form p, form legend {
+  display: block; /* insere uma quebra nos campos, de forma que fiquem um abaixo do outro, não lado a lado */
   font-size: 20px;
-  transform: scale(1.13)
+  margin:  0 0 10px; /* insere um espaço entre a label e o input */
 }
 
-
-.photos h2{
-  font-size: 20px;
+.standard-input{
+  display: block;
+  margin: 0 0 10px;
+  padding: 5px 25px;
+  width: 50%;
 }
 
-.photo-description{
-  text-align: center;
-  text-rendering: auto;
+.standard-input:hover{
+  border-color: #e7e240; 
+}
+.checkbox{
+  margin: 20px 0;
 }
 
+.submit{
+  width: 40%;
+  padding: 15px 0;
+  background-color: #e7e240;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 3s background;
+}
+
+.submit:hover{
+  background: #848004ec;
+  transform: scale(1.2); /*aumenta o botão quando o mouse passa por cima em 20%*/
+}
 footer{
   background: #000000;
   bottom: 0;
@@ -108,5 +103,3 @@ footer{
   margin: 20px 0 0
   
 }
-
-
